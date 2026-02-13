@@ -56,7 +56,20 @@ app.get("/contact", (req, res) => {
     `);
   }
 });
-
+// Service route
+app.get("/service", (req, res) => {
+  res.send(`
+    <h1>Services</h1>
+    <p>We offer a variety of services to meet your needs:</p>
+    <ul>
+      <li>Homepage</li>
+      <li>About Page</li>
+      <li>Contact Form</li>
+      <li>Services Page</li>
+    </ul>
+    <a href="/">Back to Home</a>
+  `);
+});
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
