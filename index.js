@@ -57,7 +57,7 @@ app.get("/contact", (req, res) => {
   }
 });
 // Service route
-app.get("/service", (req, res) => {
+app.get("/services", (req, res) => {
   res.send(`
     <h1>Services</h1>
     <p>We offer a variety of services to meet your needs:</p>
